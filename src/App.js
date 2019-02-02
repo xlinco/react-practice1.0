@@ -4,10 +4,18 @@ import Home from './components/Home';
 
 class App extends Component {
   render() {
+    const user = {
+      name:'Anna',
+      hobbies:['sports','reading']
+    }
     return (
       <div>hello world
         <Header />
-        <Home />
+        <Home
+          name='max' 
+          age={12} 
+          user={user}
+        />
       </div>
     );
   }
